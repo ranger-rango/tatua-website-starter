@@ -1,0 +1,151 @@
+:root {
+    --primary-01: #3a3d43;
+    --primary-02: #232428; /*sec btn backs*/
+    --primary-03: #50555e;
+    --primary-04: #676d79;
+    --primary-05: #818793;
+    --primary-06: #9ea2aa;
+    --secondary-01: #2d69ec;
+    --secondary-02: #00091e;
+    --accent: #9ea2aa;
+    --text: #f0f2f4;
+    --container-padding: .5em;
+}
+
+.header-section {
+    padding: 0;
+    display: grid;
+    place-content: center;
+    height: 70vh;
+}
+
+header {
+    width: 90vw;
+    display: grid;
+    justify-items: center;
+}
+
+header h1 {
+    padding: .5em 0;
+}
+
+header p {
+    padding: .5em 0;
+}
+
+.tagline {
+    font-weight: 600;
+}
+
+.call-to-action {
+    padding: 0;
+    display: grid;
+    place-content: center;
+    position: relative;
+    bottom: 27vh;
+}
+
+.call-to-action h2 {
+    padding: .5em;
+    display: none;
+    
+}
+
+.call-to-action div {
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding: var(--container-padding);
+}
+
+.call-to-action button {
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: .5em;
+}
+
+.call-to-action button:hover {
+    color: var(--primary-01);
+    background-color: var(--accent);
+}
+
+.call-to-action .primary {
+    background-color: var(--secondary-01);
+}
+
+.call-to-action .secondary {
+    background-color: var(--primary-02);
+}
+
+
+.services-section {
+    padding: var(--container-padding);
+    display: grid;
+    place-content: center;
+    background-color: var(--primary-03);
+    height: 70vh;
+}
+
+.services-section h2 {
+    background-color: var(--primary-03);
+    padding: .5em;
+    text-align: center;
+}
+
+.services {
+    width: 90vw;
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    background-color: var(--primary-03);
+    padding: 1em;
+}
+
+.service-container {
+    flex: 1;
+    padding: .5em .5em;
+    border-radius: .5em;
+    min-height: 20vh;
+    display: grid;
+}
+
+.stats-section {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid white; */
+    place-content: center;
+    height: 70vh;
+    background-color: var(--primary-04);
+}
+
+.stats-section h2 {
+    background-color: var(--primary-04);
+    padding: .5em;
+    text-align: center;
+}
+
+.stats {
+    width: 90vw;
+    list-style: none;
+    display: flex;
+    padding: 1em;
+    background-color: var(--primary-04);
+    gap: 1em;
+}
+
+.stats li {
+    flex: 1;
+    width: 20vw;
+    height: 20vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5em;
+}
+
+.stats li span {
+    font-size: 5em; 
+}
