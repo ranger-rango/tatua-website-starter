@@ -28,7 +28,7 @@ header {
 }
 
 header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: .5em 0;
 }
 
@@ -153,5 +153,5 @@ header p {
 }
 
 .stats li span {
-    font-size: 5em; 
+    font-size: 4em; 
 }
