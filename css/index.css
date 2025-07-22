@@ -26,11 +26,13 @@ header {
 }
 
 header h1 {
+    font-size: 4rem;
     padding: .5em 0;
 }
 
 header p {
     padding: .5em 0;
+    font-size: 1.1rem;
 }
 
 .tagline {
@@ -42,7 +44,7 @@ header p {
     display: grid;
     place-content: center;
     position: relative;
-    bottom: 27vh;
+    bottom: 17vh;
 }
 
 .call-to-action h2 {
@@ -91,6 +93,7 @@ header p {
     background-color: var(--primary-03);
     padding: .5em;
     text-align: center;
+    font-size: 4rem;
 }
 
 .services {
@@ -125,6 +128,7 @@ header p {
     background-color: var(--primary-04);
     padding: .5em;
     text-align: center;
+    font-size: 4rem;
 }
 
 .stats {
