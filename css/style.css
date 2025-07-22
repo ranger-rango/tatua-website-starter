@@ -1,0 +1,153 @@
+:root {
+    --primary-01: #3a3d43;
+    --primary-02: #232428; /*sec btn backs*/
+    --primary-03: #50555e;
+    --primary-04: #676d79;
+    --primary-05: #818793;
+    --primary-06: #9ea2aa;
+    --secondary-01: #2d69ec;
+    --secondary-02: #00091e;
+    --accent: #9ea2aa;
+    --text: #f0f2f4;
+    --container-padding: .5em;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color:var(--primary-01);
+    color: var(--text);
+    font-family: 'Lexend Deca';
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 961px) {
+    /* html {
+        justify-items: center;
+    }
+    body {
+        width: 40vw;
+    }
+
+    .company-values {
+        width: 40vw;
+    }
+
+    .company-values > ol {
+        width: 40vw;
+        padding: .5em;
+    }
+
+    .company-about-stats {
+        width: 40vw;
+    }
+
+    .company-about-stats > ul {
+        list-style: none;
+        width: 40vw;
+        padding: .5em;
+    }
+
+    .company-values > ol > li {
+        width: 35vw;
+    }
+
+    .company-about-stats > ul > li {
+        width: 35vw;
+    } */
+}
+
+span {
+    font-weight: 550;
+}
+
+nav {
+    background-color: var(--secondary-02);
+    font-size: 1.2em;
+    line-height: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    /* border-bottom: .03em solid var(--accent); */
+}
+
+nav > img {
+    padding: 0 1em;
+    width: 200px;
+    background-color: var(--secondary-02);
+}
+
+nav > div {
+    padding: 1em;
+}
+
+.current-page {
+    color: var(--secondary-01);
+    border-bottom: .2em solid var(--secondary-01);
+}
+
+.nav-menu {
+    background-color: var(--secondary-02);
+}
+
+.nav-menu a {
+    padding: 0 .7rem;
+    background-color: var(--secondary-02);
+}
+
+.breadcrumb {
+    height: 5vh;
+    padding: 0 3.5em;
+    line-height: 5vh;
+}
+
+footer {
+    justify-items: center;
+    background-color: var(--secondary-02);
+    min-height: 34.3vh;
+}
+
+footer  a {
+    color: var(--secondary-01);
+    background-color: var(--secondary-02);
+}
+
+.company-information p {
+    background-color: var(--secondary-02);
+    color: #F3F4F6;
+}
+
+.company-information h2 {
+    background-color: var(--secondary-02);
+    color: #F3F4F6;
+}
+
+.company-information span {
+    background-color: var(--secondary-02);
+    color: #F3F4F6;
+}
+
+.co-copy-right {
+    font-weight: bold;
+    padding: .5em;
+}
+
+.company-contact {
+    background-color: var(--secondary-02);
+}
+
+.company-contact > ul {
+    list-style: none;
+}
