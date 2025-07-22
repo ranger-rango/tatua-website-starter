@@ -100,6 +100,7 @@ fieldset {
     padding: 1.5em;
     border: none;
     border-radius: .5em;
+    max-width: 75vw;
 }
 
 legend {
@@ -109,13 +110,15 @@ legend {
 }
 
 form label {
-    width: 50vw;
+    max-width: 50vw;
+    min-width: 47vw;
     margin: 1.5em 0 1em 0;
     background-color: var(--primary-02);
 }
 
 form input {
-    width: 50vw;
+    max-width: 50vw;
+    min-width: 47vw;
     background-color: var(--accent);
     border: none;
     padding: .7em 1.5em;
@@ -128,7 +131,8 @@ form input::placeholder {
 }
 
 form select {
-    width: 50vw;
+    max-width: 50vw;
+    min-width: 47vw;
     background-color: var(--accent);
     border: none;
     padding: .7em 1.5em;
@@ -136,7 +140,8 @@ form select {
 }
 
 form textarea {
-    width: 50vw;
+    max-width: 50vw;
+    min-width: 47vw;
     background-color: var(--accent);
     border: none;
     padding: .7em 1.5em;
@@ -146,11 +151,19 @@ form textarea {
 
 form textarea::placeholder {
     color: var(--text);
-
 }
 
 .preferred-contact-method div {
     background-color: var(--primary-02);
+}
+
+.preferrences-fieldset label {
+    font-size: .7em;
+    margin-left: -20vw;
+}
+
+input[type="radio"]:checked {
+    color: var(--accent);
 }
 
 .best-time-to-contact div {
