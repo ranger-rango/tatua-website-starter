@@ -124,6 +124,11 @@ footer  a {
     background-color: var(--secondary-02);
 }
 
+footer li {
+    padding: 1em 0;
+    background-color: var(--secondary-02);
+}
+
 .company-information p {
     background-color: var(--secondary-02);
     color: #F3F4F6;
