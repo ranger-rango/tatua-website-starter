@@ -132,7 +132,7 @@ footer li {
 .company-information p {
     background-color: var(--secondary-02);
     color: #F3F4F6;
-    font-size: 1.3rem;
+    text-align: center;
 }
 
 .company-information h2 {
@@ -151,7 +151,7 @@ footer li {
     padding: .5em;
     font-size: 1.3rem;
     position: relative;
-    top: 25vh;
+    top: 27vh;
 }
 
 .company-contact {
