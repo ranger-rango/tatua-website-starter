@@ -26,6 +26,7 @@
 .company-story p {
     text-align: center;
     font-size: 1.3rem;
+    line-height: 2.6rem;
 }
 
 .company-mission-statement {
@@ -46,7 +47,7 @@
     text-align: center;
     font-size: 1.3rem;
     background-color: var(--primary-03);   
-
+    line-height: 2.6rem;
 }
 
 .company-team {
@@ -74,6 +75,10 @@
 .company-team li {
     padding: 1em;
     border-radius: .5em;
+}
+
+.company-team li:hover {
+    box-shadow: .1em .3em .3em .1em var(--secondary-02);
 }
 
 .company-team p {
@@ -115,6 +120,10 @@
     width: 15vw;
     height: 15vh;
     border-radius: .5em;
+}
+
+.company-about-stats li:hover {
+    box-shadow: .1em .3em .3em .1em var(--secondary-02);
 }
 
 .company-about-stats p {
