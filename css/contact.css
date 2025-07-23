@@ -61,7 +61,7 @@
 }
 
 .feature-contact-information li:hover {
-    box-shadow: .1em .3em .3em .1em var(--secondary-02);
+    box-shadow: .1em .3em .3em .1em var(--secondary-02 );
 }
 
 .feature-contact-information h3 {
@@ -234,6 +234,10 @@ input[type="radio"]:checked {
     background-color: var(--primary-02);
 }
 
+.office-locations li:hover {
+    box-shadow: .1em .3em .3em .1em var(--secondary-02);
+}
+
 .office-locations h3, p, b {
     background-color: var(--primary-02);
 }
@@ -272,10 +276,18 @@ input[type="radio"]:checked {
     border-radius: .5em;
 }
 
+.quick-actions-contact li:hover {
+    box-shadow: .1em .3em .3em .1em var(--secondary-02);
+}
+
 .quick-actions-contact a {
     background-color: var(--secondary-01);
     padding: .7em;
     border-radius: .5em;
+}
+
+.quick-actions-contact a:hover {
+    box-shadow: .1em .3em .3em .1em var(--secondary-02);
 }
 
 .quick-actions-contact p {
