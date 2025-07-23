@@ -35,10 +35,12 @@ header h1 {
 header p {
     padding: .5em 0;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .tagline {
     font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .call-to-action {
@@ -52,7 +54,6 @@ header p {
 .call-to-action h2 {
     padding: .5em;
     display: none;
-    
 }
 
 .call-to-action div {
@@ -72,6 +73,7 @@ header p {
 .call-to-action button:hover {
     color: var(--primary-01);
     background-color: var(--accent);
+    box-shadow: .1em .3em .3em .1em var(--secondary-02);
 }
 
 .call-to-action .primary {
@@ -110,10 +112,19 @@ header p {
 
 .service-container {
     flex: 1;
-    padding: .5em .5em;
+    padding: 3em .5em;
     border-radius: .5em;
     min-height: 20vh;
-    display: grid;
+    /* display: grid; */
+}
+
+.service-container:hover {
+    box-shadow: .1em .3em .3em .1em var(--secondary-02);
+}
+
+.service-container h3, p {
+    text-align: center;
+    line-height: 2em;
 }
 
 .stats-section {
@@ -150,6 +161,10 @@ header p {
     justify-content: center;
     align-items: center;
     border-radius: .5em;
+}
+
+.stats li:hover {
+    box-shadow: .1em .3em .3em .1em var(--secondary-02);
 }
 
 .stats li span {

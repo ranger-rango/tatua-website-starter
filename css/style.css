@@ -127,11 +127,13 @@ footer  a {
 .company-information p {
     background-color: var(--secondary-02);
     color: #F3F4F6;
+    font-size: 1.3rem;
 }
 
 .company-information h2 {
     background-color: var(--secondary-02);
     color: #F3F4F6;
+    text-align: center;
 }
 
 .company-information span {
@@ -142,6 +144,9 @@ footer  a {
 .co-copy-right {
     font-weight: bold;
     padding: .5em;
+    font-size: 1.3rem;
+    position: relative;
+    top: 25vh;
 }
 
 .company-contact {
@@ -151,3 +156,4 @@ footer  a {
 .company-contact > ul {
     list-style: none;
 }
+
