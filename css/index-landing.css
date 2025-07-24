@@ -1,6 +1,6 @@
 :root {
     --primary-01: #3a3d43;
-    --primary-02: #232428; /*sec btn backs*/
+    --primary-02: #232428;
     --primary-03: #50555e;
     --primary-04: #676d79;
     --primary-05: #818793;
@@ -10,10 +10,11 @@
     --accent: #9ea2aa;
     --text: #f0f2f4;
     --container-padding: .5em;
+    --on-hover: .1rem .3rem .3rem .2rem;
 }
 
 
-
+/*
 .header-section {
     padding: 0;
     display: grid;
@@ -115,7 +116,6 @@ header p {
     padding: 3em .5em;
     border-radius: .5em;
     min-height: 20vh;
-    /* display: grid; */
 }
 
 .service-container:hover {
@@ -131,7 +131,6 @@ header p {
     display: grid;
     padding: 0;
     margin: 0;
-    /* border: 1px solid white; */
     place-content: center;
     height: 70vh;
     background-color: var(--primary-04);
@@ -169,4 +168,104 @@ header p {
 
 .stats li span {
     font-size: 4em; 
+} */
+
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
+
+.tagline {
+    font-weight: 700;
+    padding: 1rem 0;
+    margin: 1rem auto;
+}
+
+.call-to-action .secondary {
+    background-color: transparent;
+    border: .1rem solid var(--primary-06);
+}
+
+.services-section {
+    gap: 1em;
+}
+
+.services {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.service-container {
+    background-color: var(--primary-06);
+    border-radius: .3rem;
+    padding: .5em;
+}
+
+.service-container:hover 
+{
+    box-shadow: var(--on-hover) var(--primary-02);
+}
+
+.service-title,.service-description {
+    background-color: var(--primary-06);
+}
+
+.stats-section {
+    gap: 1em;
+}
+
+.stats {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.stat-container {
+    background-color: var(--primary-06);
+    padding: .5em;
+    border-radius: .3rem;
+}
+
+.stat-container:hover {
+    box-shadow: var(--on-hover) var(--primary-02);
+}
+
+.stat-container p {
+    background-color: var(--primary-06);
+}
+
+.stats span {
+    font-size: 3rem;
+    background-color: var(--primary-06);
+
+}
+
+@media screen and (min-width: 768px) {
+    .services-section ul {
+        flex-direction: row;
+    }
+
+    .stats {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .tagline {
+        font-size: 1.5rem;
+    }
+
+    .service-container {
+        max-width: 20rem;
+    }
+
+    .stat-container {
+        width: 15rem;
+    }
+}
+
