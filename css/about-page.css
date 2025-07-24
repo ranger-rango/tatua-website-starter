@@ -10,156 +10,126 @@
     --accent: #9ea2aa;
     --text: #f0f2f4;
     --container-padding: .5em;
-}
-
-.company-story {
-    height: 70vh;
-    display: grid;
-    align-content: center;
-}
-
-.company-story h2 {
-    text-align: center;
-    font-size: 5rem;
+    --on-hover: .1rem .3rem .3rem .2rem;
 }
 
 .company-story p {
-    text-align: center;
-    font-size: 1.3rem;
-    line-height: 2.6rem;
-}
-
-.company-mission-statement {
-    height: 70vh;
-    display: grid;
-    align-content: center;
-    background-color: var(--primary-03);   
-}
-
-.company-mission-statement h2 {
-    text-align: center;
-    font-size: 5rem;
-    background-color: var(--primary-03);   
-
+    line-height: 2em;
 }
 
 .company-mission-statement p {
-    text-align: center;
-    font-size: 1.3rem;
-    background-color: var(--primary-03);   
-    line-height: 2.6rem;
+    line-height: 2em;
 }
 
 .company-team {
-    height: 70vh;
-    background-color: var(--primary-04);
-    display: grid;
-    align-items: center;
-}
-
-.company-team h2 {
-    text-align: center;
-    background-color: var(--primary-04);
-    font-size: 3rem;
+    height: fit-content;
 }
 
 .company-team ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1em;
-    background-color: var(--primary-04);
-    padding: 1em;
+    flex-wrap: wrap;
 }
 
 .company-team li {
+    flex: 1;
+    background-color: var(--primary-06);
     padding: 1em;
-    border-radius: .5em;
+    border-radius: .3rem;
 }
 
 .company-team li:hover {
-    box-shadow: .1em .3em .3em .1em var(--secondary-02);
+    box-shadow: var(--on-hover) var(--primary-02);
 }
 
 .company-team p {
-    padding: .3em 0;
-    font-weight: 100;
+    background-color: var(--primary-06);
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
 }
 
-.company-team span {
+.detail-title {
+    background-color: var(--primary-06);
+    padding-right: .3em;
     font-weight: 600;
 }
 
 .company-about-stats {
-    height: 70vh;
-    background-color: var(--primary-05);
-    display: grid;
-    align-items: center;
-}
-
-.company-about-stats h2 {
-    text-align: center;
-    font-size: 3rem;
-    background-color: var(--primary-05);
+    height: fit-content;
 }
 
 .company-about-stats ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em 0;
-    background-color: var(--primary-05);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     flex-wrap: wrap;
-    position: relative;
-    bottom: 13vh;
-    padding: 0 0 0 15vw;
+    align-items: center;
+    justify-content: center;
 }
 
 .company-about-stats li {
+    flex: 1;
+    background-color: var(--primary-06);
     padding: 1em;
-    width: 15vw;
-    height: 15vh;
-    border-radius: .5em;
+    border-radius: .3rem;
 }
 
 .company-about-stats li:hover {
-    box-shadow: .1em .3em .3em .1em var(--secondary-02);
+    box-shadow: var(--on-hover) var(--primary-02);
 }
 
 .company-about-stats p {
-    text-align: center;
+    background-color: var(--primary-06);
+    max-width: 10rem;
 }
 
 .company-about-stats span {
-    font-size: 3rem;
+    background-color: var(--primary-06);
+    font-size: 4rem;
 }
 
-.company-values {
-    height: 70vh;
-    background-color: var(--primary-06);
-    display: grid;
-    align-items: center;
-}
-
-.company-values h2 {
-    text-align: center;
-    font-size: 5rem;
-    background-color: var(--primary-06);
-}
-
-.company-values p {
-    background-color: var(--primary-06);
-    text-align: center;
-    font-size: 1.3rem;
-    padding: 0 0 2em 0;
-    /* position: relative;
-    bottom: 10vh; */
+.company-values ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .company-values span {
-    background-color: var(--primary-06);
-
+    font-weight: 600;
+    padding-right: 2em;
 }
 
+@media screen and (min-width: 768px) {
+    .company-story p {
+        max-width: 50rem;
+        font-size: 1.3rem;
+    }
+
+    .company-team ul {
+        flex-direction: row;
+        width: 50rem;
+    }
+
+    .company-about-stats ul {
+        flex-direction: row;
+        max-width: 50rem;
+    }
+
+    .company-values p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .company-team ul {
+        flex-direction: row;
+        width: 60rem;
+    }
+}
 
 
