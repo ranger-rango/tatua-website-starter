@@ -28,44 +28,19 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
 }
 
-@media (min-width: 961px) {
-    /* html {
-        justify-items: center;
-    }
-    body {
-        width: 40vw;
-    }
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
-    .company-values {
-        width: 40vw;
-    }
-
-    .company-values > ol {
-        width: 40vw;
-        padding: .5em;
-    }
-
-    .company-about-stats {
-        width: 40vw;
-    }
-
-    .company-about-stats > ul {
-        list-style: none;
-        width: 40vw;
-        padding: .5em;
-    }
-
-    .company-values > ol > li {
-        width: 35vw;
-    }
-
-    .company-about-stats > ul > li {
-        width: 35vw;
-    } */
+a {
+    text-decoration: none;
 }
 
 span {
@@ -74,47 +49,55 @@ span {
 
 nav {
     background-color: var(--secondary-02);
-    font-size: 1.2em;
-    line-height: 1.2em;
+    font-size: .7rem;
+    line-height: 10vh;
     display: flex;
-    justify-content: space-between;
+    width: 100vw;
+    justify-content: space-evenly;
     align-items: center;
-    height: 10vh;
-    /* border-bottom: .03em solid var(--accent); */
+    flex-wrap: wrap;
+    height: 13vh;
+    padding: .5rem;
 }
 
 nav > img {
-    padding: 0 1em;
-    width: 200px;
+    padding: 0 .5em;
+    width: 100px;
     background-color: var(--secondary-02);
-}
-
-nav > div {
-    padding: 1em;
-}
-
-.current-page {
-    color: var(--secondary-01);
-    border-bottom: .2em solid var(--secondary-01);
 }
 
 .nav-menu {
     background-color: var(--secondary-02);
+    padding: 0 1rem;
+    height: 5vh;
+    display: inline-flex;
+    justify-content: space-evenly;
 }
 
 .nav-menu a {
     padding: 0 .7rem;
     background-color: var(--secondary-02);
+    display: flex;
+    align-items: center;
+    height: inherit;
 }
 
 .breadcrumb {
+    display: flex;
+    justify-content: space-around;
     height: 5vh;
-    padding: 0 3.5em;
     line-height: 5vh;
+    width: 100vw
+} 
+
+.breadcrumb div {
+    width: inherit;
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
 }
 
 footer {
-    justify-items: center;
     background-color: var(--secondary-02);
     min-height: 34.3vh;
 }
@@ -122,17 +105,17 @@ footer {
 footer  a {
     color: var(--secondary-01);
     background-color: var(--secondary-02);
+    width: 100vw;
 }
 
 footer li {
-    padding: 1em 0;
+    /* padding: 1rem 0; */
     background-color: var(--secondary-02);
 }
 
 .company-information p {
     background-color: var(--secondary-02);
     color: #F3F4F6;
-    text-align: center;
 }
 
 .company-information h2 {
@@ -160,5 +143,108 @@ footer li {
 
 .company-contact > ul {
     list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        background-color: var(--secondary-02);
+        font-size: 1rem;
+        line-height: 10vh;
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        padding: .5rem;
+    }
+
+    nav > img {
+        padding: 0 .5em;
+        width: 100px;
+        background-color: var(--secondary-02);
+    }
+
+    .nav-menu {
+        background-color: var(--secondary-02);
+        padding: 0 1rem;
+        height: 5vh;
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+
+    .nav-menu a {
+        padding: 0 .7rem;
+        background-color: var(--secondary-02);
+        display: flex;
+        align-items: center;
+        height: inherit;
+    }
+
+    .breadcrumb {
+        display: flex;
+        justify-content: space-around;
+        height: 5vh;
+        line-height: 5vh;
+        width: 100vw
+    } 
+
+    .breadcrumb div {
+        border: 1px solid white;
+        width: inherit;
+        display: flex;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    footer li {
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        background-color: var(--secondary-02);
+        font-size: 1.2em;
+        line-height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        flex-wrap: wrap;
+    }
+
+    nav > img {
+        padding: 0 1em;
+        width: 200px;
+        background-color: var(--secondary-02);
+    }
+
+    nav > div {
+        padding: 0 1rem;
+    }
+
+    .current-page {
+        color: var(--secondary-01);
+        border-bottom: .2em solid var(--secondary-01);
+    }
+
+    .nav-menu {
+        background-color: var(--secondary-02);
+    }
+
+    .nav-menu a {
+        padding: 0 .7rem;
+        background-color: var(--secondary-02);
+    }
+
+    .breadcrumb {
+        height: 5vh;
+        padding: 0 3.5em;
+        line-height: 5vh;
+    }
+
+    footer li {
+        padding: 1rem 0;
+    }
 }
 
