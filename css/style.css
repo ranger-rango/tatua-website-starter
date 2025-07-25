@@ -1,17 +1,4 @@
-:root {
-    --primary-01: #3a3d43;
-    --primary-02: #232428; /*sec btn backs*/
-    --primary-03: #50555e;
-    --primary-04: #676d79;
-    --primary-05: #818793;
-    --primary-06: #9ea2aa;
-    --secondary-01: #2d69ec;
-    --secondary-02: #00091e;
-    --accent: #9ea2aa;
-    --text: #f0f2f4;
-    --container-padding: .5em;
-    --on-hover: .1rem .3rem .3rem .2rem;
-}
+@import url(../css/variables.css);
 
 @font-face {
     font-family: 'Lexend Deca';
@@ -23,10 +10,11 @@
 * {
     padding: 0;
     margin: 0;
-    background-color:var(--primary-01);
+    background-color:var(--secondary-02);
     color: var(--text);
     font-family: 'Lexend Deca';
     box-sizing: border-box;
+    color: var(--text);
 }
 
 html {
@@ -75,6 +63,7 @@ section p {
 
 a {
     text-decoration: none;
+    color: var(--text);
 }
 
 span {
@@ -92,6 +81,7 @@ nav {
     flex-wrap: wrap;
     height: 13vh;
     padding: .5rem;
+    border-bottom: .05rem solid var(--primary-06);
 }
 
 nav > img {
@@ -136,6 +126,7 @@ footer {
     background-color: var(--secondary-02);
     min-height: 34.3vh;
     width: 100vw;
+    border-top: .05rem solid var(--primary-06);
 }
 
 footer  a {
@@ -156,18 +147,15 @@ footer li {
 
 .company-information p {
     background-color: var(--secondary-02);
-    color: #F3F4F6;
 }
 
 .company-information h2 {
     background-color: var(--secondary-02);
-    color: #F3F4F6;
     text-align: center;
 }
 
 .company-information span {
     background-color: var(--secondary-02);
-    color: #F3F4F6;
 }
 
 .co-copy-right {
@@ -320,5 +308,20 @@ button:hover {
     footer li {
         padding: 1rem 0;
     }
+}
+
+.theme-switcher-btn {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 4rem;
+    background-color: var(--primary-02);
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+}
+
+.theme-switcher-btn svg {
+    fill: var(--primary-01);
 }
 
