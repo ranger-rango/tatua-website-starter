@@ -53,7 +53,7 @@
 
                     <li>
                         <div>
-                            <h3></h3>
+                            <h3>Email</h3>
                             <p><span>General Inquiries:</span> <a href="mailto:hello@tatua.com">hello@tatua.com</a></p>
                             <p><span>Sales:</span> <a href="mailto:sales@tatua.com">sales@tatua.com</a></p>
                             <p><span>Support:</span> <a href="mailto:support@tatua.com">support@tatua.com</a></p>
@@ -189,14 +189,18 @@
 
                         <div class="newsletter-subscription">
                             <p>NewsLetter Subscription: </p>
-                            <input type="checkbox" name="newsletter_subscription" id="newsletter_subscription_id" value="yes" >
-                            <label for="newsletter_subscription_id">Yes, I'd like to receive product updates and industry insights</label>
+                            <div>
+                                <input type="checkbox" name="newsletter_subscription" id="newsletter_subscription_id" value="yes" >
+                                <label for="newsletter_subscription_id">Yes, I'd like to receive product updates and industry insights</label>
+                            </div>
                         </div>
 
                         <div class="terms-agreement">
                             <p>Terms of Agreement: </p>
-                            <input type="checkbox" name="terms_agreement" id="terms_agreement_id" value="yes" required>
-                            <label for="terms_agreement_id">I agree to the Terms of Service and Privacy Policy</label>
+                            <div>
+                                <input type="checkbox" name="terms_agreement" id="terms_agreement_id" value="yes" required>
+                                <label for="terms_agreement_id">I agree to the Terms of Service and Privacy Policy</label>
+                            </div>
                         </div>
                     </fieldset>
 
@@ -233,7 +237,7 @@
 
             <section class="quick-actions-contact">
                 <h2>Quick Actions</h2>
-                <ol>
+                <ul>
                     <li>
                         <a href="">Start Free Trial</a>
                         <p>Get up and running in minutes with our 14-day free trial</p>
@@ -248,20 +252,18 @@
                         <a href="">Download Resources</a>
                         <p>Access our implementation guide and best practices documentation</p>
                     </li>
-                </ol>
+                </ul>
             </section>
         </main>
 
         <footer  class="company-information">
             <p class="co-copy-right">© 2025 Tatua Solutions Inc.</p>
-            <section class="company-contact" aria-label="Footer, company copyright and contact">
                 <h2>Contact Us</h2>
-                <ul>
-                    <li><p><span class="contact-head">Email:</span><a href="mailto:hello@tatua.com">hello@tatua.com</a></p></li>
-                    <li><p><span class="contact-head">Phone:</span>+1(5555) 123-4567</p></li>
-                    <li><p><span class="contact-head">Address:</span>123 Innovation Drive, Suite 400, San Francisco, CA 94105</p></li>
-                </ul>
-            </section>
+            <ul  class="company-contact" aria-label="Footer, company copyright and contact">
+                <li><p><span class="contact-head">Email:</span><a href="mailto:hello@tatua.com">hello@tatua.com</a></p></li>
+                <li><p><span class="contact-head">Phone:</span>+1(5555) 123-4567</p></li>
+                <li><p><span class="contact-head">Address:</span>123 Innovation Drive, Suite 400, San Francisco, CA 94105</p></li>
+            </ul>
         </footer>
     </body>
 </html>
