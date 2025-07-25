@@ -1,6 +1,6 @@
 :root {
     --primary-01: #3a3d43;
-    --primary-02: #232428; /*sec btn backs*/
+    --primary-02: #232428;
     --primary-03: #50555e;
     --primary-04: #676d79;
     --primary-05: #818793;
@@ -10,290 +10,266 @@
     --accent: #9ea2aa;
     --text: #f0f2f4;
     --container-padding: .5em;
+    --on-hover: .1rem .3rem .3rem .2rem;
 }
 
 .contact-header {
-    height: 70vh;
-    margin-top: 35vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
 }
 
-.contact-header h1 {
+.contact-header h2, .contact-header p {
     text-align: center;
-    font-size: 4rem;
-}
-
-.contact-header h2 {
-    text-align: center;
-    font-size: 3rem;
-}
-
-.contact-header p {
-    text-align: center;
-    font-size: 1.3rem;
-    background-color: var(--primary-01);
 }
 
 .feature-contact-information {
-    height: 70vh;
-    background-color: var(--primary-03);
-    display: grid;
+    height: fit-content;
 }
 
 .feature-contact-information h2 {
-    text-align: center;
-    background-color: var(--primary-03);
-    line-height: 3em;
+    font-size: 1rem;
 }
 
 .feature-contact-information ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: var(--primary-03);
+    display: flex;
+    flex-direction: column;
     gap: 1em;
-    padding: 1em;
 }
 
 .feature-contact-information li {
-    background-color: var(--primary-02);
+    background-color: var(--primary-06);
     padding: 1em;
-    border-radius: .5em;
+    border-radius: .3rem;
 }
 
-.feature-contact-information li:hover {
-    box-shadow: .1em .3em .3em .1em var(--secondary-02 );
-}
-
-.feature-contact-information h3 {
-    background-color: var(--primary-02);
-    padding: 1em;
-}
-.feature-contact-information p {
-    background-color: var(--primary-02);
-    padding: 1em;
-}
-
-.feature-contact-information p span {
-    background-color: var(--primary-02);
-}
-
+.feature-contact-information h3,
+.feature-contact-information p ,
 .feature-contact-information a {
-    background-color: var(--primary-02);
+    background-color: var(--primary-06);
+    line-height: 2rem;
 }
 
-/* .contact-form {
-    display: block;
-}*/
+.feature-contact-information span {
+    background-color: var(--primary-06);
+    font-weight: 600;
+}
+
+.contact-form {
+    height: fit-content;
+}
 
 form {
-    padding: 2em;
-} 
-
-form h3 {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 fieldset {
-    display: grid;
-    margin: 2em auto;
-    background-color: var(--primary-02);
-    place-content: center;
-    padding: 1.5em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: var(--primary-06);
     border: none;
-    border-radius: .5em;
-    max-width: 75vw;
+    border-radius: .3rem;
 }
 
 legend {
-    background-color: var(--primary-02);
+    background-color: var(--primary-06);
     padding: 1em;
-    border-radius: .5em;
+    border-radius: .3rem;
 }
 
-form label {
-    max-width: 50vw;
-    min-width: 47vw;
-    margin: 1.5em 0 1em 0;
-    background-color: var(--primary-02);
+label {
+    background-color: var(--primary-06);
+    font-size: 1rem;
+
 }
 
-form input {
-    max-width: 50vw;
-    min-width: 47vw;
-    background-color: var(--accent);
+input {
     border: none;
-    padding: .7em 1.5em;
-    border-radius: .5em;
+    border-radius: .3rem;
+    height: 2rem;
+    padding: 0 1rem;
     color: var(--text);
 }
 
-form input::placeholder {
+input::placeholder {
     color: var(--text);
 }
 
-form select {
-    max-width: 50vw;
-    min-width: 47vw;
-    background-color: var(--accent);
+select {
     border: none;
-    padding: .7em 1.5em;
-    border-radius: .5em;
+    border-radius: .3rem;
+    height: 2rem;
+    padding: 0 1rem;
 }
 
-form textarea {
-    max-width: 50vw;
-    min-width: 47vw;
-    background-color: var(--accent);
+textarea {
     border: none;
-    padding: .7em 1.5em;
-    border-radius: .5em;
+    border-radius: .3rem;
+    height: 8rem;
+    padding: 1rem;
     color: var(--text);
 }
 
-form textarea::placeholder {
+textarea::placeholder {
     color: var(--text);
-}
-
-.preferred-contact-method div {
-    background-color: var(--primary-02);
 }
 
 .preferrences-fieldset label {
-    font-size: .7em;
-    margin-left: -20vw;
+    font-size: .7rem;
+    background-color: var(--primary-01);
 }
 
-input[type="radio"]:checked {
-    color: var(--accent);
+.preferrences-fieldset p {
+    background-color: var(--primary-01);
+}
+
+.preferrences-fieldset div {
+    border-radius: .3rem;
+}
+
+.preferred-contact-method {
+    padding: 1em;
+}
+
+.preferred-contact-method div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.best-time-to-contact {
+    padding: 1em;
 }
 
 .best-time-to-contact div {
-    background-color: var(--primary-02);
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 .newsletter-subscription {
-    background-color: var(--primary-02);
+    padding: 1em;
+}
+
+.newsletter-subscription div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 .terms-agreement {
-    background-color: var(--primary-02);
+    padding: 1em;
+}
+
+.terms-agreement div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 .button-container {
-    padding: 1em;
-    display: flex;
-    gap: 1em;
-    place-content: center;
-}
-
-.button-container button {
-    padding: 1em;
-    border: none;
-    border-radius: .5em;
-}
-
-.submit-button {
-    background-color: var(--secondary-01);
-}
-
-.reset-button {
-    background-color: var(--primary-02);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
 }
 
 .button-container button:hover {
-    box-shadow: .1em .3em .3em .1em var(--secondary-02);
+    box-shadow: var(--on-hover) var(--primary-02);
 }
 
-
-.office-locations {
-    height: 70vh;
-    background-color: var(--primary-05);
-    padding: 10rem 0;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.office-locations h2 {
-    background-color: var(--primary-05);
-    font-size: 4rem;
-    text-align: center;
+.reset-button {
+    border: .1em solid var(--primary-06);
+    background-color: transparent;
 }
 
 .office-locations ul {
     list-style: none;
     display: flex;
-    padding: 1em;
-    place-content: center;
+    flex-direction: column;
     gap: 1em;
-    background-color: var(--primary-05);
 }
 
 .office-locations li {
     padding: 1em;
-    border-radius: .5em;
-    background-color: var(--primary-02);
-}
-
-.office-locations li:hover {
-    box-shadow: .1em .3em .3em .1em var(--secondary-02);
-}
-
-.office-locations h3, p, b {
-    background-color: var(--primary-02);
-}
-
-.quick-actions-contact {
+    border-radius: .3rem;
     background-color: var(--primary-06);
-    height: 70vh;
-    padding: 10rem 0;
-    margin: 0 auto;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-
-.quick-actions-contact h2 {
-    font-size: 4rem;
+.office-locations div {
     background-color: var(--primary-06);
-    text-align: center;
-    display: grid;
-    align-items: center;
+    padding: .2em;
 }
 
-.quick-actions-contact ol {
-    margin-top:  2rem;
+.office-locations h3, .office-locations p, .office-locations b {
+    background-color: var(--primary-06);
+    line-height: 2rem;
+}
+
+.quick-actions-contact ul {
     list-style: none;
     display: flex;
-    padding: 1em;
+    flex-direction: column;
     gap: 1em;
-    background-color: var(--primary-06);
+    align-items: center;
+    justify-content: center;
 }
 
 .quick-actions-contact li {
-    flex: 1;
-    background-color: var(--primary-02);
-    height: fit-content;
-    padding: 1.5em 1em 1em 1em ;
-    border-radius: .5em;
+    padding: 1em;
+    background-color: var(--primary-06);
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
 }
 
 .quick-actions-contact li:hover {
-    box-shadow: .1em .3em .3em .1em var(--secondary-02);
+    box-shadow: var(--on-hover) var(--primary-02);
 }
 
 .quick-actions-contact a {
-    background-color: var(--secondary-01);
-    padding: .7em;
-    border-radius: .5em;
-}
-
-.quick-actions-contact a:hover {
-    box-shadow: .1em .3em .3em .1em var(--secondary-02);
+    text-align: center;
+    padding: .5em;
+    border-radius: .3rem;
 }
 
 .quick-actions-contact p {
-    padding: 1.5em 0;
-    background-color: var(--primary-02);
+    background-color: var(--primary-06);
 }
+
+@media screen and (min-width: 768px) {
+    .feature-contact-information ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .feature-contact-information li {
+        width: 17rem;
+    }
+
+    .office-locations ul {
+        flex-direction: row;
+    }
+
+    .quick-actions-contact ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .quick-actions-contact li {
+        max-width: 20rem;
+    }
+}
+
 
 
 
