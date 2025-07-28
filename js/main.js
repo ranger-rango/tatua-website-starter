@@ -10,5 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // document.documentElement.setAttribute('data-theme', 'brown');
+        
+
+    });
+
+    const slider = document.getElementById('font-slider');
+    const fontValue = document.getElementById('font-value');
+
+    slider.addEventListener('input', () => 
+    {
+        const size = slider.value;
+        document.documentElement.style.fontSize = `${size}px`;
+        fontValue.textContent = size;
     });
 });
