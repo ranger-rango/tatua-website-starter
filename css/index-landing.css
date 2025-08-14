@@ -5,6 +5,11 @@
     gap: 2rem;
 }
 
+header p {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+}
+
 .tagline {
     font-weight: 700;
     padding: 1rem 0;

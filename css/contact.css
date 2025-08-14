@@ -1,11 +1,19 @@
 .contact-header {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 5rem 10rem;
+    gap: 1rem;
 }
 
-.contact-header h2, .contact-header p {
+.contact-header h2 {
     text-align: center;
+    line-height: 2rem;
+    font-size: 2rem;
+}
+
+.contact-header p {
+    text-align: center;
+    line-height: 2rem;
 }
 
 .feature-contact-information {
@@ -13,7 +21,7 @@
 }
 
 .feature-contact-information h2 {
-    font-size: 1rem;
+    /* font-size: 2rem; */
 }
 
 .feature-contact-information ul {
@@ -229,6 +237,10 @@ textarea::placeholder {
 
 .quick-actions-contact p {
     background-color: var(--primary-06);
+}
+
+.slider-container input {
+    padding: unset;
 }
 
 @media screen and (min-width: 768px) {
